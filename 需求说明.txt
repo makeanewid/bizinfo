@@ -1,0 +1,45 @@
+首先数据库是有密码的Home/config下，可以改下
+然后，可建一个bizinfodata数据库，把几个表单导进去
+第三，主要修改的地方是在登入之后，用13482557279 654321登入看吧
+
+以下a/e两个是我目前碰到的难点，你可以优先考虑，谢
+
+
+a)         点击侧边栏显示class
+	localhost/home/resinfo/index/
+	点击侧边栏，用的是url传参查找数据库，session会传入点击category的value值，希望实现class active的效果
+
+b)         信息界面为空提示
+	首页如果某一个category没有信息，显示一句提示的话
+	
+c)         显示自己的留言
+	http://127.0.0.1:8082/home/user/personalmanagement
+	个人中心相应tab显示自己发布的留言
+
+d)         自动显示默认信息
+	localhost/home/resinfo/addres
+	自动在text框中显示个人信息中已填写的信息
+
+e)         打钩不做校验
+	localhost/home/resinfo/addres
+	目前是页面加载后，对输入框会做校验，希望联系方式打钩后才做校验，不打勾不用对相应项做校验，且3项至少选一项
+
+f)          完善地域数据库
+	数据库全国省市信息完善
+
+g)         地域筛选信息
+	localhost/home/resinfo/index/
+	前台显示信息可根据地域进行筛选，北京的只显示北京地区的信息
+
+h)         信息删除，不读数据库
+	http://127.0.0.1:8082/home/user/personalmanagement
+	删除数据库方法，只是改变数据库的某一字段，让前台校验该字段不予显示信息，而不是真的在数据库中删除信息
+
+i)           Admin界面，信息增加后进入审核
+
+	做一个admin的新界面，主要用来审核用户前台递交的信息，用户前台递交的界面不是直接前台显示，而是先要admin审核后才显示
+	
+j)           信息时间显示
+	信息按发布时填写的有效期进行换算显示，显示该条信息有效期还有多少时间
+	
+
